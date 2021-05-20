@@ -1,0 +1,153 @@
+header{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+header > img{
+    position: absolute;
+    top: 8px;
+    left: 6vw;
+
+    height: 15vw;
+}
+
+#header-top{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#header-top img{
+    position: relative;
+    width: 100%;
+
+    z-index: -1;
+}
+
+#header-top p{
+    position: absolute;
+
+    color: var(--greenSecundary);
+    font-size: 3.2vw;
+    font-weight: bolder;
+
+    width: 50%;
+
+    align-self: center;
+}
+
+#institutional-partners{
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+
+    background-color: rgba(0,0,0,0.5);
+}
+
+#institutional-partners > img{
+    height: 5vw;
+    width: auto;
+}
+
+#header-down{
+    background: var(--greenPrimary);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.burguer-button{
+    height: 36px;
+    width: fit-content;
+    
+    display: flex;
+    align-items: center;
+
+    padding: 0 12px;
+
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+#menu-links{
+    align-self: flex-start;
+    list-style: none;
+}
+
+.link{
+    font-size: 16px;
+
+    padding: 16px;
+    width: 100vw;
+
+    border-top: 1px solid rgba(231, 255, 146, 0.5);
+}
+
+.link:last-child{
+    border-bottom: 8px solid #A3FF4A ;
+}
+
+.link a{
+    text-decoration: none;
+    font-weight: lighter;
+    color: white;
+
+    height: 100%;
+}
+
+.selected a{
+    font-weight: bolder;
+    color: var(--greenSecundary);
+}
+
+@media screen and (min-width:768px) {
+    #header-top{
+        align-items: center;
+    }
+
+    #institutional-partners{
+        margin-right: 4%;
+    }
+
+    #header-down{
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .burguer-button{
+        display: none;
+    }
+    
+    #menu-links{
+        list-style-type: none;
+        
+        display: flex;
+        gap: 96px;
+    }
+
+    .link{
+        float: left;
+        width: fit-content;
+        padding: 16px 0;
+
+        border: none;
+    }
+
+    .link:last-child{
+        border: none;
+    }
+
+    .selected{
+        border-bottom: 4px solid var(--greenSecundary);
+    }
+}

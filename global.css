@@ -1,15 +1,15 @@
 :root{
   --greenPrimary:#71B430;
+  --greenSecundary: #E7FF92;
   --borderRadius:4px;
   --boxShadow:0px 4px 8px  rgba(0, 0, 0, 0.15);
 }
 *{
   margin:0;
+  padding: 0;
 }
 
 body{
-  display: flex;
-  justify-content: center;
   width: 100%;
 }
 .container{
