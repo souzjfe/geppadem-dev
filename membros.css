@@ -1,5 +1,8 @@
 
-
+body{
+  display: flex;
+  flex-direction: column;
+}
 main{
   justify-content: center;
   display: flex;

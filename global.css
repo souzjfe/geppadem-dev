@@ -1,5 +1,6 @@
 :root{
   --greenPrimary:#71B430;
+  --blueDark:#0077B6;
   --borderRadius:4px;
   --boxShadow:0px 4px 8px  rgba(0, 0, 0, 0.15);
 }
@@ -10,7 +11,8 @@
 body{
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
+  align-items: center;
 }
 .container{
   width: min(90vw, 1100px);
